@@ -13,3 +13,22 @@ def solution(A):
                 
             
     return minimum 
+
+
+
+# other solution
+A = [1,2,3,4]
+
+def solution(A):
+    start = 1
+    array = set(A)
+
+    for i in array:
+        if i > start:
+            return start
+        elif i == start:
+            start += 1
+            
+    return start
+    
+print(solution(A))  
